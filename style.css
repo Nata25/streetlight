@@ -40,19 +40,43 @@ body {
   display: none;
 }
 
-p {
+.emoji {
   font-family: inherit;
   font-size: 100px;
 }
 
-button {
+.button {
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button--sm {
+  margin: 0 10px 0 0;
+  padding: 5px 10px;
+  border: 1px solid #6f6fc5;
+}
+
+.button--selected {
+  background: grey;
+  border: grey;
+  color: white;
+}
+
+.buttons {
   position: absolute;
   left: 10px;
   top: 10px;
+  display: flex;
+}
+
+.tracks {
+  padding-left: 20px;
+}
+
+.switcher {
   padding: 15px 20px;
   background-color: #6f6fc5;
   border: none;
   color: white;
-  border-radius: 4px;
   font-size: 16px;
 }

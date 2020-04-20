@@ -9,15 +9,22 @@
   </head>
     <main>
       <div class=streetLight>
-        <button class=button id=switcher>Почали!</button>
-        <p id=emoji></p>
+        <div class=buttons>
+          <button class="button switcher" id=switcher>Почали!</button>
+          <div class=tracks id=tracks>
+            <p>Оберіть трек:</p>
+            <button id=kids class="button button--sm">Дитяча</button>
+            <button id=pop class="button button--sm">Поп-музика</button>
+          </div>
+        </div>
+      
+        <p id=emoji class=emoji></p>
         
         <div id=leftPart class="background left"></div>
         <div id=rightPart class="background right"></div>
 
         <audio id=audio controls loop class=audio>
-          <source src="lets-dance.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
+          <source src="./music/happy-summer.mp3" type="audio/mpeg">
         </audio>
 
       </div>
