@@ -52,13 +52,16 @@ function clickHandler () {
 }
 
 function changeColor () {
+  const flag = randomUpTo(3);
+  
   const color = randomUpTo(3);
-  left.style.background = colors[color]
 
-  if (color < 2) {
+  if (flag < 2) {
+    left.style.background = colors[color]
     right.style.background = colors[color]
   } else {
-  right.style.background = colors[randomUpTo(3)];    
+    left.style.background = colors[color]
+    right.style.background = colors[randomUpTo(3)];    
   }
   
   const emojiNum = randomUpTo(3);
